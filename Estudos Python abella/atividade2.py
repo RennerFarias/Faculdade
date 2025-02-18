@@ -7,7 +7,20 @@ sucessor = numero + 1
 
 print(f"Antecessor: {antecessor}")
 print(f"Sucessor: {sucessor}")
+#---------------------------------------------------------------------------------
+#coisa que eu fiquei martelado o dia inteniro o porque caralhos do F, acabei achando uma explicação boa então vou deixar aqui caso alguém precise 
 
-#coisa que eu fiquei martelado o dia inteniro o porque caralhos do F após o print, resumindo ele permite que a gente coloque variáveis diretamente dentro da string, sem precisar usar + para concatenar.
+#Normalmente, para misturar texto e variáveis no print(), a gente teria que fazer algo assim:nome = "Renner"
+#idade = 19
+#print("Meu nome é " + nome + " e eu tenho " + str(idade) + " anos.")
+
+#sso é meio chato, porque precisamos usar o + e converter números para string (str(idade)).
+#------------------------------------------------------------------------------------
+## Usando o f"" (Interpolação de strings)
+
+#Com f"", a gente coloca as variáveis diretamente dentro da string, sem precisar usar + ou str():
+
+#print(f"Meu nome é {nome} e eu tenho {idade} anos.")
+#-----------------------------------------------------------------------
 
 #se lembre de sempre usar variaveis!!
