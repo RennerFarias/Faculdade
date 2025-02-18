@@ -1,4 +1,4 @@
-# Lê um número inteiro do usuário
+#(input) guarda um valor como str (texto), como estamos fazendo calculo, devemos converter usando o (int) para transformar em valor inteiro 
 numero = int(input("Digite um número inteiro: "))
 
 # Calcula os valores
