@@ -1,0 +1,22 @@
+#Explicações basicas: 
+#(input) mesmo que o usuário digite um número, ele será interpretado como uma string. (texto)
+#como podemos fazer a conversão de string para inteiro??, nós utilizamos a função int() caso haja numero decimal podemos usar float()
+
+
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Realiza as operações
+soma = num1 + num2
+subtracao = num1 - num2
+multiplicacao = num1 * num2
+divisao = num1 / num2
+resto_divisao = num1 % num2
+
+# Imprime os resultados
+print(f"Soma: {soma}")
+print(f"Subtração: {subtracao}")
+print(f"Multiplicação: {multiplicacao}")
+print(f"Divisão: {divisao}")
+print(f"Resto da divisão: {resto_divisao}")
