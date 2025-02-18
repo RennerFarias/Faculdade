@@ -26,4 +26,4 @@ print(f"Resto da divisão: {resto_divisao}")
 
 #um = 10.6
 #arredondado = round(num)
-#print(arredondado)
+#print (arredondado)
