@@ -20,3 +20,10 @@ print(f"Subtração: {subtracao}")
 print(f"Multiplicação: {multiplicacao}")
 print(f"Divisão: {divisao}")
 print(f"Resto da divisão: {resto_divisao}")
+
+
+#coisas que ainda quero perguntar ao prof é sobre o round() que eu entendi que era para para arrendodar para mais (eu acho) vai ter um exemplo abaixo
+
+#um = 10.6
+#arredondado = round(num)
+#print(arredondado)
