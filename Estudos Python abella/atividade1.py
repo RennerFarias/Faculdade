@@ -27,3 +27,10 @@ print(f"Resto da divisão: {resto_divisao}")
 #um = 10.6
 #arredondado = round(num)
 #print (arredondado)
+
+#📌 Resumo:
+
+#✅ string → Sempre texto (ex: "Olá", "123", "10.5").
+#✅ input() → Tudo que o usuário digita vem como string, mesmo que seja um número.
+#✅ int() → Converte string para número inteiro (ex: "10" → 10).
+#✅ float() → Converte string para número decimal (ex: "10.5" → 10.5).
