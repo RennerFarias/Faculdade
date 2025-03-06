@@ -1,6 +1,6 @@
 import time
 
-filmes = ['Oppenheimer' , 'Doctor Who' , 'Corra']
+filmes = ['Oppenheimer' , 'Doctor Who' , 'Corra', 'Homem aranha'] 
 filmes_alugados = []
 
 def listar_filmes():
