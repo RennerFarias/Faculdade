@@ -1,44 +1,47 @@
 import time
 
-# Lista que armazenará as reclamações')
-reclamações = []
+# Lista que armazenará as reclamações
+reclamacoes = []
 
-def listar_reclamações():
+def listar_reclamacoes():
     """Exibe todas as reclamações registradas."""
-    if reclamações:
-        print('\nLista de Reclamações:')
-        for i, reclamacao in enumerate(reclamações, start=1):  # Nome diferente
-            print(f'Reclamação {i}) {reclamacao}')  # Corrigido o print também
-    else:
+    if not reclamacoes:
         print('\nNenhuma reclamação cadastrada.')
+    else:
+        print('\nLista de Reclamações:')
+        for i, reclamacao in enumerate(reclamacoes, start=1):
+            print(f'{i}) {reclamacao}')
+    time.sleep(0.5)
 
-def criar_reclamação():
-    """Adiciona uma nova reclamações ao sistema."""
-    descricao = input('\nDescreva sua reclamações: ').strip()
-    reclamações.append(descricao)
-    codigo = len(reclamações)  # Código da reclamações (posição na lista +1)
-    print(f'Reclamações cadastrada com sucesso. O seu código é {codigo}')
+def criar_reclamacao():
+    """Adiciona uma nova reclamação ao sistema."""
+    descricao = input('\nDescreva sua reclamação: ').strip()
+    if descricao:  
+        reclamacoes.append(descricao)
+        print(f'Reclamação cadastrada com sucesso. O seu código é {len(reclamacoes)}')
+    else:
+        print('Erro: A reclamação não pode ser vazia.')
+    time.sleep(0.5)
 
 def exibir_quantidade():
-    """Exibe o número total de reclamações') registradas."""
-    quantidade = len(reclamações)
-    print(f'\nAté o momento, o sistema possui exatas {quantidade} reclamações')
+    """Exibe o número total de reclamações registradas."""
+    print(f'\nO sistema possui {len(reclamacoes)} reclamação(ões) cadastrada(s).')
+    time.sleep(0.5)
 
 def pesquisar_por_codigo():
-    """Pesquisa uma reclamações pelo código informado pelo usuário."""
-    if not reclamações:
-        print('\nNenhuma reclamações cadastrada para pesquisa.')
-        return
-    
-    codigo = input('\nPor favor, informe o código da reclamações: ')
-    if codigo.isdigit():
-        codigo = int(codigo)
-        if 1 <= codigo <= len(reclamações):
-            print(f'Reclamações {codigo}: {reclamações[codigo - 1]}')
-        else:
-            print('Código inválido. Nenhuma reclamações encontrada.')
+    """Pesquisa uma reclamação pelo código informado pelo usuário."""
+    if not reclamacoes:
+        print('\nNenhuma reclamação cadastrada para pesquisa.')
     else:
-        print('ERRO. DIGITE APENAS NÚMEROS')
+        try:
+            codigo = int(input('\nInforme o código da reclamação: '))
+            if 1 <= codigo <= len(reclamacoes):
+                print(f'Reclamação {codigo}: {reclamacoes[codigo - 1]}')
+            else:
+                print('Código inválido. Nenhuma reclamação encontrada.')
+        except ValueError:
+            print('ERRO. DIGITE APENAS NÚMEROS.')
+    time.sleep(0.5)
 
 def menu():
     """Exibe o menu principal e processa as escolhas do usuário."""
@@ -47,20 +50,21 @@ def menu():
         print('SISTEMA DE RECLAMAÇÃO'.center(40))
         print('=' * 40)
         print('1 - Listar reclamações')
-        print('2 - Criar nova reclamações')
+        print('2 - Criar nova reclamação')
         print('3 - Exibir quantidade de reclamações')
-        print('4 - Pesquisar reclamações por código')
+        print('4 - Pesquisar reclamação por código')
         print('5 - Sair do sistema')
-        
+
         opcao = input('\nDigite sua opção: ')
+
         time.sleep(0.5)
-        
-        if opcao.isdigit():
+
+        try:
             opcao = int(opcao)
             if opcao == 1:
-                listar_reclamações()
+                listar_reclamacoes()
             elif opcao == 2:
-                criar_reclamação()
+                criar_reclamacao()
             elif opcao == 3:
                 exibir_quantidade()
             elif opcao == 4:
@@ -70,13 +74,15 @@ def menu():
                 break
             else:
                 print('Opção inválida! Escolha um número entre 1 e 5.')
-        else:
-            print('ERRO. DIGITE APENAS NÚMEROS')
-        
-        time.sleep(1)
+        except ValueError:
+            print('ERRO. DIGITE APENAS NÚMEROS.')
+
+        time.sleep(0.5)
 
 if __name__ == '__main__':
     menu()
+
+
 
 '''A função listar_reclamações() exibe todas as reclamações registradas no sistema.
 
