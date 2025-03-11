@@ -106,3 +106,10 @@ if __name__ == '__main__':
     # por fim temos o adicionar filme, onde ele pede para o usuario digitar o nome do filme que deseja adicionar, e o filme é adicionado a lista de filmes disponiveis, essa é a unica parte onde não está 100% funcional, pois o filme adicionado não fica salvo no codigo, ou seja, se o programa for fechado, o filme adicionado é perdido, todo conteudo fica na memoria volatil
 
     #por fim fizemos um menu onde o cliente pode entender e utilizar o programa, onde fica mais intuitivo para o usuario, tendo explicações claras de cada coisa que ele pode fazer no programa.
+
+    #Uma curiosidade que me perguntaram foi como eu fiz para que o nome = locadora, ficasse centralizado no meio, utilizamos esse comando 
+    #print('=' * 30)
+    #print('Locadora'.center(30))
+    #print('=' * 30)
+    
+    # o primeiro print ele manda mostrar na tela 30 vezes o sinal de igual, para que possamos fazer um destaque no nome locadora, o segundo print ele centraliza o nome locadora no meio do print, já o terceiro apenas repete o que o primeiro comando fazia para ter um destaque para que o usuario possa ver melhor.
