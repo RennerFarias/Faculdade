@@ -91,3 +91,18 @@ def menu():
 
 if __name__ == '__main__':
     menu()
+
+    #bom dia a todos,hoje é um novo dia para aprender mais sobre python, essa lista foi desenvolvida para um trabalho de faculdade, onde o objetivo era criar um sistema de locadora de filmes, onde o usuario pode alugar, devolver, adicionar e listar filmes.
+    #o codigo foi desenvolvido com conhecimentos adquiridos no curso e trabalho feito com outros colegas, onde todos tiveram parte do desenvolvimento do codigo. 
+    # irei explicar coisas importantes do nosso codigo para que possa ser de facil compreenção para todos que forem ler nosso codigo e entender o que ele faz. 
+
+    #primeiramente, temos a lista de filmes, onde temos 3 filmes disponiveis para alugar, e a lista de filmes alugados, onde os filmes que forem alugados vão para essa lista.
+
+    #temos a função listar_filmes, onde ela verifica se tem filmes disponiveis, se tiver ela lista os filmes disponiveis, se não tiver ela informa que não tem filmes disponiveis.
+
+    #temos a função alugar_filme, onde ela verifica se tem filmes disponiveis, se tiver ela lista os filmes disponiveis e pede para o usuario digitar o numero do filme que deseja alugar, se o numero for valido, o filme é alugado e vai para a lista de filmes alugados, se não for valido, ele informa que o numero é invalido e pede para escolher um filme da lista.
+
+    #temos a função devolver_filme, onde ela verifica se tem filmes alugados, se tiver ela lista os filmes alugados e pede para o usuario digitar o numero do filme que deseja devolver, se o numero for valido, o filme é devolvido e vai para a lista de filmes disponiveis, se não for valido, ele informa que o numero é invalido e pede para escolher um filme da lista de filmes alugados. 
+    # por fim temos o adicionar filme, onde ele pede para o usuario digitar o nome do filme que deseja adicionar, e o filme é adicionado a lista de filmes disponiveis, essa é a unica parte onde não está 100% funcional, pois o filme adicionado não fica salvo no codigo, ou seja, se o programa for fechado, o filme adicionado é perdido, todo conteudo fica na memoria volatil
+
+    #por fim fizemos um menu onde o cliente pode entender e utilizar o programa, onde fica mais intuitivo para o usuario, tendo explicações claras de cada coisa que ele pode fazer no programa.
