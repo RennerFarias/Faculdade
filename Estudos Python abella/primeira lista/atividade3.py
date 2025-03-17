@@ -10,3 +10,4 @@ metade = numero / 2  # Aqui a divisão retorna um número decimal
 print(f"Dobro: {dobro}")
 print(f"Triplo: {triplo}")
 print(f"Metade: {metade}")
+print(f"Raiz quadrada: {numero ** 0.5}") 
