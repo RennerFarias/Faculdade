@@ -1,62 +1,59 @@
-import time
-manifestacoes = []
-def listar_manifestacoes():
-    if not manifestacoes:
-        print("\nNenhuma manifestação cadastrada.")
-    else:
-        print("\nManifestações existentes:")
-        for i, reclamacao in enumerate(manifestacoes, start=1):
-            print(f'{i}) {reclamacao}')
-    time.sleep(0.5)
+'''
+   Projeto Realizado por: 
+   
+   José Artur, Igor Lima, Renner Farias.
 
-def adicionar_manifestacao():
-    descricao = input("Digite a descrição da Manifestação: ")
-    manifestacoes.append(descricao)
-    print(f"Manifestação cadastrada com sucesso! O seu código é {len(manifestacoes)}")
-    time.sleep(0.5)
+   Data Realizada: 12/03/2025
+'''
 
-def exibir_quantidade():
-    print(f"\nNúmero de Manifestações existentes: {len(manifestacoes)}")
-    time.sleep(0.5)
+manifestações = []
 
-def pesquisar_manifestacao():
+opcao = -1
+
+while opcao != 5:
+    print("\nOpção 1) Listagem de Manifestações "
+    "\nOpção 2) Criar uma nova Manifestação "
+    "\nOpção 3) Exibir quantidade de Manifestações "
+    "\nOpção 4) Pesquisar uma Manifestação por código "
+    "\nOpção 5) Sair do sistema")
+
     try:
-        codigo = int(input("Por favor, informe o código da Manifestação: "))
-        if 1 <= codigo <= len(manifestacoes):
-            print(f"Manifestação {codigo}: {manifestacoes[codigo - 1]} ")
-        else:
-            print("Código inválido. Tente novamente.")
+        opcao = int(input("Digite uma opção: "))
     except ValueError:
-        print("Digite apenas números!!")
-    time.sleep(0.5)
+        print("Digite uma opção válida!!")
+        continue
 
-def main():
-    while True:
-        print('\n' + '=' * 40)
-        print('SISTEMA DE MANIFESTAÇÕES'.center(40))
-        print('=' * 40)
-        print("1) Listar Manifestações")
-        print("2) Adicionar Manifestação")
-        print("3) Quantidade de Manifestações")
-        print("4) Pesquisar Manifestação por código")
-        print("5) Sair")
-        opcao = input("Digite uma opção: ")
-        if opcao == '1':
-            listar_manifestacoes()
-        elif opcao == '2':
-            adicionar_manifestacao()
-        elif opcao == '3':
-            exibir_quantidade()
-        elif opcao == '4':
-            pesquisar_manifestacao()
-        elif opcao == '5':
-            print("Saindo do programa...")
-            break
+
+    if opcao == 1:
+        if manifestações:
+            for item in enumerate(manifestações, start = 1):
+                print(f"Manifestação {item}")
+
         else:
-            print("Opção inválida! Tente novamente.")
-        time.sleep(0.5)
+            print("Não há manifestacões")
 
-if __name__ == "__main__":
-    main()
+        
 
-    #preciso revisar esse conteudo e entender melhor o que foi feito 
+    elif opcao == 2:
+        descricao = str(input("Digite a descrição da Manifestação: "))
+        manifestações.append(descricao)
+        codigo = len(manifestações)
+        print(f"Manifestação cadastrada com sucesso! o seu código é {codigo}")
+        
+
+    elif opcao == 3:
+        print("\nNúmero de Manifestações existentes:")
+        for item in manifestações:
+            print("-",item)
+    
+    elif opcao == 4:
+            codigo = int(input("Por favor, informe o código da Manifestação: "))
+            if 1 <= codigo <= len(manifestações):
+                print(f"Manifestação {codigo}: {manifestações[codigo - 1]} ")
+            else:
+                print("Código inválido. Tente novamente.")
+
+    elif opcao == 5:
+        print("Saindo do programa...")
+    else:
+        print("Opção inválida!")
