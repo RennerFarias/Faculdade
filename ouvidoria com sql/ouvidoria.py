@@ -15,13 +15,13 @@ def conectar_banco():
 
 def exibir_menu():
     print("\n--- SISTEMA DE OUVIDORIA ---")
-    print("1. Listar todas as manifestações")
-    print("2. Listar por tipo")
+    print("1. Listagem das Manifestações")
+    print("2. Listagem de Manifestações por Tipo")
     print("3. Criar nova manifestação")
-    print("4. Quantidade de manifestações")
-    print("5. Pesquisar por código")
-    print("6. Excluir manifestação")
-    print("7. Sair")
+    print("4. Exibir quantidade de manifestações")
+    print("5. Pesquisar uma manifestação por código")
+    print("6. Excluir uma Manifestação pelo Código")
+    print("7. Sair do Sistema.")
     return input("Digite a opção: ")
 
 def listar_todas(conexao):
@@ -141,4 +141,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-#para resetar o banco de dados, use o seguinte comando: TRUNCATE TABLE manifestacoes;
+#para resetar o banco de dados, use o seguinte comando: TRUNCATE TABLE manifestacoes;3
