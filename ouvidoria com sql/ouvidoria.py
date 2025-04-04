@@ -7,7 +7,7 @@ Data: 02/04/2025
 from database import *
 
 def conectar_banco():
-    conexao = criarConexao("localhost", "root", "senha", "sistema_manifestacoes")
+    conexao = criarConexao("localhost", "root", "12345", "sistema_manifestacoes")
     if not conexao:
         print("Não foi possível conectar ao banco de dados!")
         exit()

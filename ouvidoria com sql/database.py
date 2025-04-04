@@ -3,11 +3,12 @@ import mysql.connector
 def criarConexao(endereco, usuario, senha, bancodedados):
     try:
         return mysql.connector.connect(
-            host=endereco,
+            host=endereco, 
             user=usuario,
             password=senha,
             database=bancodedados
         )
+        
     except mysql.connector.Error as err:
         print(f"Erro ao conectar ao banco de dados: {err}")
         return None
