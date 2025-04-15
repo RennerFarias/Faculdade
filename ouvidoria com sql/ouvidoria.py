@@ -1,9 +1,3 @@
-'''
-Projeto Realizado por: 
-José Artur, Igor Lima, Renner Farias.
-Data: 02/04/2025
-'''
-
 from database import *
 
 def conectar_banco():
