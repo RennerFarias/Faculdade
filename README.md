@@ -1,4 +1,4 @@
-# 📚 Repositório de Estudos - Sistemas de Informação
+# 📚 Repositório de Estudos
 
 Este repositório organiza meus materiais acadêmicos da graduação em Sistemas de Informação na UNIFACISA. 
 
