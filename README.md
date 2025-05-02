@@ -1,7 +1,7 @@
-# 📚 Repositório de Estudos 
+# 📚 Repositório de Estudos - Sistemas de Informação
 
-Bem-vindo ao meu repositório de estudos da faculdade! Aqui organizo todos os materiais, projetos e atividades desenvolvidos durante meu curso em **Sistemas De Informações** na **UNIFACISA**. 
+Este repositório organiza meus materiais acadêmicos da graduação em Sistemas de Informação na UNIFACISA. 
 
-## 📂 Estrutura do Repositório
+## 📂Organização dos Arquivos
 
-periodo > professor > conteudo
+Todo o conteúdo é estruturado de forma hierárquica simples: primeiro por período acadêmico, depois por professor responsável. Dentro de cada pasta de professor, os arquivos são agrupados por tipo de conteúdo (materiais de aula, trabalhos práticos, listas de exercícios e avaliações).
